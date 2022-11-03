@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Bree+Serif&family=Dancing+Script:wght@700&family=Roboto&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Kaushan+Script&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,300,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,300,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,100,0,0" />
+    <link rel="shortcut icon" href="data:image/png;base64,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">
+    <title>WhatsApp</title>
+  <link rel="stylesheet" href="/assets/index.e0af1955.css">
+</head>
+
+<body class="bg-[#128c7e] font-['roboto','helvetica'] md:bg-white">
+    <div
+        class="navbar h-[61px] flex justify-end items-center md:h-[74px] lg:h-[91px] md:justify-center md:bg-[#128c7e] md:sticky top-0 left-0 right-0 md:z-50">
+        <div
+            class="hamburger inline-block float-right cursor-pointer mx-6 relative right-[1px] bottom-0.5 xsm:mx-[30px] sm:mx-[37px] md:hidden">
+            <div class="lines h-0.5 w-5 my-1 bg-white"></div>
+            <div class="lines h-0.5 w-5 my-[5px] bg-white"></div>
+            <div class="lines h-0.5 w-5 my-1 bg-white"></div>
+        </div>
+        <div
+            class="hidden md:flex flex-grow justify-evenly pl-8 pr-8 items-center text-center md:max-w-[1050px] lg:max-w-[1113px] xl:max-w-[1115px] 2xl:max-w-[1115px] 3xl:max-w-[1114px]">
+            <div class="flex items-center min-w-[10%] lg:hidden">
+                <img class="w-[37px] h-9 relative bottom-0.5 hover:cursor-pointer" src="/assets/wp.533ef667.svg" alt="" srcset="">
+            </div>
+            <div class="hidden lg:flex min-w-[20%]">
+                <img class="relative bottom-0.5 cursor-pointer" src="/assets/lgwpImage.708f4f78.svg" alt="" srcset="">
+            </div>
+            <div class="flex flex-grow justify-evenly">
+                <div class="flex flex-grow justify-evenly text-white text-sm lg:text-base">
+                    <span class="cursor-pointer">WHATSAPP WEB</span>
+                    <span class="cursor-pointer">FEATURES</span>
+                    <span class="cursor-pointer">DOWNLOAD</span>
+                    <span class="cursor-pointer">PRIVACY</span>
+                    <span class="cursor-pointer">HELP CENTER</span>
+                </div>
+                <div class="flex items-center">
+                    <span class="flex items-center cursor-pointer"><img class="invert h-[18px] lg:h-[18px]" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAVZJREFUSEu9lYtNAzEQRCedQCVAJ1AJoRKgEqASoJJET9qx5hwnOXF3rHSyZe/u7GduvdPGstvYv+YA3Eviu6v1R9KnpN9a2Z+VSwA3kl7L6SUfAD5IYj2RcwB7Sc+lbUMAHS0ZIdxxzvouCbuJjADS+UsZHcrKkX6X06fK0MFYv4H0AESDMYIzIn6sUr1JwiHyUY7t0Dpkgk7rSw/QG+IMQIANyBklQheHtwXqzPNswiJHsQZzWzCZQdZ+KUjrRQJASbIgZTNnVH+DW5+a0x/EPaQHZDEpkWs9yuqEHcUu2NPfwbjWh3S2JkALPgHMoGTLX0vUKP2vTTa3lzII+9b4zCCHWzZubulM88agnkVJM/YGGRn2FM3ss4fD9yDnChOShuVwg4KeV/wz6M8eds4ijTySuctxneeZ8dVxbYVNH5wEAYjPTyZ3RP+19Mlcg66zHv1FQEew/nEZ0Z4vBwAAAABJRU5ErkJggg==" alt="">
+                        <li class="hidden lg:inline-flex text-base text-white pl-1 relative left-[0.4px]">EN</li>
+                    </span>
+                    <span class="hidden lg:block cursor-pointer"><img class="invert h-[16px] w-[14px] relative left-0.5 top-[1px]"
+                            src="/assets/arrow_dd.2f8e83aa.svg" alt="">
+                    </span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="flex justify-center my-1 md:hidden">
+        <img class="h-[77px] w-[79px] relative bottom-[1px] right-[0.1px] cursor-pointer" src="/assets/wp.533ef667.svg" alt="Whatsapp" srcset="">
+    </div>
+    <div class="flex flex-col items-center text-white text-2xl font-normal my-9 md:hidden">
+        <p>Simple. Secure.</p>
+        <p>Reliable messaging.</p>
+    </div>
+    <div class="text-white text-center text-base m-4 -mt-2 px-6 md:hidden">
+        <p class="px-4 relative bottom-1 mb-7 xsm:px-3 sm:px-0 sm:mx-5">With WhatsApp, you'll get fast, simple, secure messaging
+            and calling for
+            <span class="nowrap">free<sup class="relative top-0">*</sup>,</span> available on phones all over the world.
+        </p>
+    </div>
+    <div class="flex justify-center items-center mb-[2.5rem] md:hidden">
+        <button class="text-white bg-[#075e54] py-[13.5px] px-8 rounded-[40px] w-[80%]">DOWNLOAD NOW</button>
+    </div>
+    <div class="h-[24.4rem] overflow-hidden md:hidden">
+        <div class="flex justify-center">
+            <img class="w-[19rem]" src="/assets/phoneicon.70196259.png" alt="" srcset="">
+        </div>
+    </div>
+
+    <section class="hidden md:flex py-14">
+        <div class="flex max-w-[80%] mx-auto lg:max-w-[776px] lg:relative lg:right-[6px] 3xl:max-w-[775px]">
+            <div class="flex justify-between items-center">
+                <div class="flex flex-wrap justify-between items-center">
+                    <div class="max-w-[50%] h-[95.17%]">
+                        <article class="pb-8 text-[#1c1e21]">
+                            <h2 class="text-3.5xl">Simple. Secure.</h2>
+                            <h2 class="text-3.5xl pb-4">Reliable messaging.</h2>
+                            <div class="box-border text-wp">
+                                <p class="my-[18px]">With WhatsApp, you'll get fast, simple, secure messaging and
+                                    calling for
+                                    <span class="pr-[0.5px]">free<sup
+                                            class="text-[#5E5E5E] relative top-[5px] align-super">*</sup>,</span>
+                                    available on phones all over the world.
+                                </p>
+                            </div>
+                            <div class="relative">
+                                <p class="my-4 text-[#5E5E5E] leading-[1.34rem] font-[sans-serif]"><sup
+                                        class="relative top-[4px] align-super">*</sup> Data charges may apply. Contact
+                                    your provider for details.</p>
+                            </div>
+
+                        </article>
+                        <div class="flex items-center text-[#1CB39B]">
+                            <ul class="text-lg leading-[26px]">
+                                <li class="flex pb-4 items-center"><span
+                                        class=" min-w-[16px] pr-[18px] relative bottom-[1px] cursor-pointer"><svg width="14"
+                                            height="14" fill="none" class="_af8a _9u4c">
+                                            <path 
+                                                d="M2.904 10.59c0 .365.324.663.722.663h.824v1.881c0 .477.415.866.925.866s.924-.387.924-.866v-1.882h1.44v1.88c0 .477.414.866.924.866.511 0 .924-.387.924-.865v-1.881h.825c.398 0 .721-.299.721-.664V4.413H2.904v6.176zM8.95 1.212L9.71.197c.045-.059.035-.139-.025-.178-.059-.037-.144-.018-.188.041l-.789 1.056A5.002 5.002 0 007.002.822c-.608 0-1.187.105-1.707.294L4.506.062c-.044-.06-.129-.08-.188-.041-.06.037-.07.116-.025.178l.76 1.016c-1.209.518-2.056 1.501-2.164 2.65h8.229c-.112-1.15-.96-2.133-2.168-2.652zM5.265 2.815a.483.483 0 01-.254-.071.43.43 0 01-.167-.189.39.39 0 01-.026-.243.411.411 0 01.124-.215.49.49 0 01.496-.091.45.45 0 01.205.155c.05.069.077.15.077.233a.406.406 0 01-.134.297.477.477 0 01-.321.124zm3.528 0a.483.483 0 01-.253-.071.43.43 0 01-.168-.189.39.39 0 01-.026-.243.411.411 0 01.125-.215.49.49 0 01.496-.091.45.45 0 01.205.155c.05.069.076.15.076.233a.406.406 0 01-.133.297.477.477 0 01-.322.124zm3.783 1.573c-.512 0-.925.387-.925.866v3.38c0 .477.415.866.925.866s.924-.387.924-.865V5.252c.002-.478-.411-.864-.925-.864zm-11.152 0c-.51 0-.924.387-.924.866v3.38c0 .477.415.866.924.866.512 0 .925-.387.925-.865V5.252c0-.478-.415-.864-.925-.864z"
+                                                fill="currentColor"></path>
+                                        </svg></span><span class="cursor-pointer hover:underline">Android</span><span
+                                        class="rotate-180 px-2 relative top-[1px] cursor-pointer"><svg width="8" height="13"
+                                            fill="none" class="_9vd8 _agnt _9u4p">
+                                            <path d="M7.41 1.91L2.83 6.5l4.58 4.59L6 12.5l-6-6 6-6 1.41 1.41z"
+                                                fill="currentColor"></path>
+                                        </svg></span></li>
+
+                                <li class="flex pb-4 items-center"><span
+                                        class="min-w-[16px] pr-[20px] relative bottom-[1px] cursor-pointer"><svg width="12" height="14"
+                                            fill="none" class="_af8b _9u4c">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M8.973 0a3.133 3.133 0 01-.716 2.244 2.635 2.635 0 01-2.081.984 2.98 2.98 0 01.735-2.161A3.187 3.187 0 018.973 0zm1.455 5.916a3.181 3.181 0 00-.415 1.53 3.074 3.074 0 001.877 2.827 7.05 7.05 0 01-.976 1.989c-.575.86-1.178 1.7-2.135 1.716-.455.01-.762-.12-1.082-.257-.334-.142-.682-.29-1.227-.29-.577 0-.94.152-1.291.3-.303.127-.596.25-1.01.268-.911.034-1.608-.918-2.203-1.77-1.191-1.74-2.119-4.904-.876-7.057A3.417 3.417 0 013.966 3.42c.517-.011 1.013.188 1.448.363.332.133.629.253.872.253.214 0 .502-.115.838-.248.53-.21 1.178-.468 1.838-.398a3.256 3.256 0 012.566 1.387 3.181 3.181 0 00-1.1 1.14z"
+                                                fill="currentColor"></path>
+                                        </svg></span><span class="cursor-pointer hover:underline">iPhone</span><span
+                                        class="rotate-180 px-2 relative top-[1px] cursor-pointer"><svg width="8" height="13"
+                                            fill="none" class="_9vd8 _agnt _9u4p">
+                                            <path d="M7.41 1.91L2.83 6.5l4.58 4.59L6 12.5l-6-6 6-6 1.41 1.41z"
+                                                fill="currentColor"></path>
+                                        </svg></span></li>
+
+                                <li class="flex pb-4 items-center"><span
+                                        class="min-w-[16px] pr-[16px] relative bottom-[1px] cursor-pointer"><svg width="16" height="14"
+                                            fill="none" class="_af8c _9u4c">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M1.41 8.4h12.68v-7H1.41v7zM14.09 0H1.41C.633 0 0 .63 0 1.4v8.4c0 .77.634 1.4 1.41 1.4h4.93l-1.408 2.1v.7h5.636v-.7L9.16 11.2h4.932c.775 0 1.409-.63 1.409-1.4V1.4c0-.77-.634-1.4-1.41-1.4z"
+                                                fill="currentColor"></path>
+                                        </svg></span><span class="cursor-pointer hover:underline">Mac or Windows PC</span><span
+                                        class="rotate-180 px-2 relative top-[1px] cursor-pointer"><svg width="8" height="13"
+                                            fill="none" class="_9vd8 _agnt _9u4p">
+                                            <path d="M7.41 1.91L2.83 6.5l4.58 4.59L6 12.5l-6-6 6-6 1.41 1.41z"
+                                                fill="currentColor"></path>
+                                        </svg></span></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    
+                    <div class="max-w-[41.665%]">
+                        <img class="lg:max-w-[304px]" src="/assets/phoneicon.70196259.png" alt="">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <div class="bg-[#D8E8EA] md:hidden">
+        <div class="pt-20">
+            <p class="flex justify-center text-2.5xl font-extrabold tracking-wide">WhatsApp Business App</p>
+            <div class="flex text-center flex-wrap px-6 mx-4 text-base pb-[4.5rem] sm:mx-8">
+                <p class="py-6 xsm:mx-[6px] sm:mx-4 text-[#1c1e21]"><span class="text-[#39b3ed] cursor-pointer hover:underline">WhatsApp Business</span>
+                    is a free to download app that was built with the small business owner in mind. Create a catalog to
+                    showcase your products and services. Connect with your customers easily by using tools to automate,
+                    sort and quickly respond to messages.
+                </p>
+                <p class="pt-2 sm:mx-5">WhatsApp can also help medium and large businesses provide customer support and
+                    deliver
+                    important notifications to customers. Learn more about <span class="text-[#39b3ed] cursor-pointer hover:underline">WhatsApp
+                        Business API.</span></p>
+            </div>
+            <div class="flex justify-center">
+                <img class="max-w-[80%]" src="/assets/phoneicon2.5e468e68.png" alt="" srcset="">
+            </div>
+        </div>
+    </div>
+    <div class="bg-[#e7f0e4] md:hidden">
+        <div class="h-[47.15rem] xsm:h-[43.9rem] sm:h-[40.6rem] text-center">
+            <div class="inline-flex rounded-full bg-[#77d7c8] w-[273px] h-[273px] mt-20 relative overflow-hidden">
+                <div class="animate-go absolute -top-14">
+                        <div class="absolute top-3 left-[19px] z-10 text-xl font-['Kaushan_Script']"><p class="text-lime-600 drop-shadow-md">Signing_off<span class="absolute px-1 py-[1px] text-2xl">&#x270C;</span></p></div>
+
+                        <div class="absolute top-[7px] left-[290px] z-10 text-3xl font-['caveat']"><p class="text-blue-600 drop-shadow-lg">Mradul<span class="absolute text-2xl px-2 py-1">&#129321;</span></p></div>
+
+                        <svg class="_9v2o absolute" height="51px" version="1.1" viewBox="0 0 227 67" width="177px" x="0" xmlns="http://www.w3.org/2000/svg" y="0"><path fill="#F8FFE8" d="M224.5,0h-29.1c-0.2,0-0.4,0-0.5,0.1C194.3,0,193.6,0,193,0H20.2C9.1,0,0,9.1,0,20.2v25.9 c0,11.2,9.1,20.2,20.2,20.2H193c11.2,0,20.2-9.1,20.2-20.2V20.8l13-17.1C227.4,2.1,226.4,0,224.5,0z"></path></svg>
+                        
+                        <svg class="_9v2o absolute left-64" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" width="177px" height="51px" viewBox="0 0 228.1 66.2" style="enable-background:new 0 0 228.1 66.2;"><path fill="#ffffff" d="M207.8,0H33.7c-0.6,0-1.2,0-1.9,0.1c-0.2,0-0.3-0.1-0.5-0.1h-29c-1.9,0-3,2.1-1.8,3.6l13.1,17.1V46 c0,11.2,9.1,20.2,20.2,20.2h174.1c11.2,0,20.2-9.1,20.2-20.2V20.2C228.1,9.1,219,0,207.8,0z"></path></svg>
+                </div>
+            </div>
+            <h3 class="pt-6 text-[#5E5E5E] font-bold tracking-widest mb-1"> END-TO-END ENCRYPTION </h3>
+            <h1 class="font-bold text-2.5xl tracking-wide pb-2"> Security by Default </h1>
+            <div class="text-center px-6 mx-4 text-base break-words sm:mx-10">
+                <p class="py-4 text-[#1c1e21] xsm:px-3 sm:px-0"> Some of your most personal moments are shared on WhatsApp, which is why we
+                    built
+                    end-to-end encryption into the latest versions of our app. When end-to-end encrypted, your messages
+                    and calls are secured so only you and the person you're communicating with can read or listen to
+                    them, and nobody in between, not even WhatsApp. </p>
+            </div>
+        </div>
+        <div class="bg-white flex justify-center align-middle">
+            <button class="border-2 border-[#77d7c8] text-[#128c7e] mt-8 mb-14 px-8 py-[13.5px] rounded-[40px]">EXPLORE
+                FEATURES</button>
+        </div>
+    </div>
+
+    <div class="hidden md:flex max-w-[1440px] mx-auto">
+        <div class="leftbox flex mr-4 pt-20 bg-[#D8E8EA] w-[167rem]">
+            <div class="text-center">
+                <h1 class="text-[34px] leading-[44px] font-bold pb-4"> WhatsApp Business App </h1>
+                <div class="max-w-[80%] flex mx-auto">
+                    <div class="flex flex-wrap">
+                        <div class="box-border">
+                            <p class="text-wp my-[18px]">
+                                <span class="text-[#39b3ed] cursor-pointer hover:underline"> WhatsApp Business </span>
+                                is a free to download app that was built with the small business owner in mind. Create a catalog to showcase your products and services. Connect with your customers easily by using tools to automate, sort and quickly respond to messages.
+                            </p>
+                        </div>
+                        <div class="box-border">
+                            <p class="text-wp my-[18px]"> WhatsApp can also help medium and large businesses provide customer support and deliver important notifications to customers. Learn more about <span class="text-[#39b3ed] cursor-pointer hover:underline">WhatsApp Business API.</span>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="h-[88px]"></div>
+                <div class="flex justify-center">
+                    <img class="max-w-[64%] lg:max-w-[54%]" src="/assets/phoneicon2.5e468e68.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="rightbox flex ml-4 pt-20 bg-[#E7F0E4]">
+            <div class="text-center">
+                <div class="h-[350px] w-[350px] mx-auto bg-[#77d7c8] rounded-full relative overflow-hidden">
+                    <div class="animate-translate absolute top-[140px] -left-[550px]">
+                        <div class="absolute top-3 left-[13px] z-10 text-3xl font-['Kaushan_Script']"><p><span class="auto-type text-indigo-500 drop-shadow-lg">Signing_off</span><span class="absolute px-2 py-[1px] text-4xl">&#129311;&#127995;</span></p></div>
+                        <div class="absolute top-3 left-[350px] z-10 text-4xl font-['Pacifico']"><p><span class="autoType text-red-500 drop-shadow-lg">Mradul</span><span class="absolute px-2">&#128526;</span></p></div>
+                        <svg class="_9v2o absolute" height="67px" version="1.1" viewBox="0 0 227 67" width="227px" x="0" xmlns="http://www.w3.org/2000/svg" y="0"><path fill="#F8FFE8" d="M224.5,0h-29.1c-0.2,0-0.4,0-0.5,0.1C194.3,0,193.6,0,193,0H20.2C9.1,0,0,9.1,0,20.2v25.9 c0,11.2,9.1,20.2,20.2,20.2H193c11.2,0,20.2-9.1,20.2-20.2V20.8l13-17.1C227.4,2.1,226.4,0,224.5,0z"></path></svg>
+                        <svg class="_9v2o absolute left-80" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" width="228.1px" height="66.2px" viewBox="0 0 228.1 66.2" style="enable-background:new 0 0 228.1 66.2;"><path fill="#ffffff" d="M207.8,0H33.7c-0.6,0-1.2,0-1.9,0.1c-0.2,0-0.3-0.1-0.5-0.1h-29c-1.9,0-3,2.1-1.8,3.6l13.1,17.1V46 c0,11.2,9.1,20.2,20.2,20.2h174.1c11.2,0,20.2-9.1,20.2-20.2V20.2C228.1,9.1,219,0,207.8,0z"></path></svg>
+                    </div>
+                </div>
+                <div class="h-14"></div>
+                <h3 class="text-[#5E5E5E] mb-[2px] tracking-[0.15em] leading-[34px] font-bold"> END-TO-END ENCRYPTION </h3>
+                <h1 class="text-[#1c1e21] text-[34px] leading-[44px] font-bold pb-4"> Security by Default </h1>
+                <div class="flex max-w-[80%] mx-auto">
+                    <div class="box-border">
+                        <p class="text-wp my-[18px]"> Some of your most personal moments are shared on WhatsApp, which is why we built end-to-end encryption into the latest versions of our app. When end-to-end encrypted, your messages and calls are secured so only you and the person you're communicating with can read or listen to them, and nobody in between, not even WhatsApp. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="hidden md:block">
+        <div class="h-14"></div>
+        <div class="bg-white flex justify-center align-middle">
+            <button class="border-2 border-[#77d7c8] text-[#128c7e] px-8 pt-[14px] pb-[13.5px] rounded-[40px]">EXPLORE
+                FEATURES</button>
+        </div>
+        <div class="h-[88px]"></div>
+    </div>
+
+    <div class="footer text-white">
+        <div class="f-top bg-[#273443]">
+            <div class="box pt-14 px-6 flex flex-wrap md:flex md:py-14 md:px-5 lg:max-w-[1050px] lg:w-[90%] lg:mx-auto xl:max-w-[1090px]">
+                <div class="box1 w-1/2 mb-8 md:w-1/4 md:mb-0">
+                    <h3 class="pb-4 font-bold text-[#F0F4F9] tracking-[1.7px] md:pb-8">WHATSAPP</h3>
+                    <a href="#">
+                        <h4 class="pb-4 md:pb-1"><span class="text-wp">Features</span></span></h4>
+                    </a>
+                    <a href="#">
+                        <h4 class="pb-4 md:pb-1"><span class="text-wp">Download</span></h4>
+                    </a>
+                    <a href="#">
+                        <h4 class="pb-4 md:pb-1"><span class="text-wp">WhatsApp Web</span></h4>
+                    </a>
+                    <a href="#">
+                        <h4 class="pb-4 md:pb-1"><span class="text-wp">Business</span></h4>
+                    </a>
+                    <a href="#">
+                        <h4 class="pb-4 md:pb-1"><span class="text-wp">Privacy</span></h4>
+                    </a>
+                </div>
+                <div class="box2 w-1/2 mb-8 md:w-1/4 md:mb-0">
+                    <h3 class="pb-4 font-bold text-[#F0F4F9] tracking-[1.7px] md:pb-8">COMPANY</h3>
+                    <a href="#">
+                        <h4 class="pb-4 md:pb-1"><span class="text-wp">About</span></h4>
+                    </a>
+                    <a href="#">
+                        <h4 class="pb-4 md:pb-1"><span class="text-wp">Careers</span></h4>
+                    </a>
+                    <a href="#">
+                        <h4 class="pb-4 md:pb-1"><span class="text-wp">Brand Center</span></h4>
+                    </a>
+                    <a href="#">
+                        <h4 class="pb-4 md:pb-1"><span class="text-wp">Get in touch</span></h4>
+                    </a>
+                    <a href="#">
+                        <h4 class="pb-4 md:pb-1"><span class="text-wp">Blog</span></h4>
+                    </a>
+                    <a href="#">
+                        <h4 class="pb-4 md:pb-1"><span class="text-wp">WhatsApp Stories</span></h4>
+                    </a>
+                </div>
+                <div class="box3 w-1/2 mb-8 md:w-1/4 md:mb-0">
+                    <h3 class="pb-4 font-bold text-[#F0F4F9] tracking-[1.7px] md:pb-8">DOWNLOAD</h3>
+                    <a href="#">
+                        <h4 class="pb-4 md:pb-1"><span class="text-wp">Mac/PC</span></h4>
+                    </a>
+                    <a href="#">
+                        <h4 class="pb-4 md:pb-1"><span class="text-wp">Android</span></h4>
+                    </a>
+                    <a href="#">
+                        <h4 class="pb-4 md:pb-1"><span class="text-wp">iPhone</span></h4>
+                    </a>
+                </div>
+                <div class="box4 w-1/2 mb-8 md:w-1/4 md:mb-0">
+                    <h3 class="pb-4 font-bold text-[#F0F4F9] tracking-[1.7px] md:pb-8">HELP</h3>
+                    <a href="#">
+                        <h4 class="pb-4 md:pb-1"><span class="text-wp">Help Center</span></h4>
+                    </a>
+                    <a href="#">
+                        <h4 class="pb-4 md:pb-1"><span class="text-wp">Twitter</span></h4>
+                    </a>
+                    <a href="#">
+                        <h4 class="pb-4 md:pb-1"><span class="text-wp">Facebook</span></h4>
+                    </a>
+                    <a href="#">
+                        <h4 class="pb-4 md:pb-1"><span class="text-wp">Coronavirus</span></h4>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="f-bottom bg-[#111b21] md:px-6 md:py-1">
+                <div class="px-6 py-4 md:px-0 md:py-2 md:flex md:justify-between lg:max-w-[1050px] lg:w-[90%] lg:mx-auto">
+                    <h4 class="text-lg py-2">2022 © WhatsApp LLC</h4>
+                    <h6 class="font-medium text-md"><span class="cursor-pointer">Privacy & Terms<span
+                            class="material-symbols-outlined relative top-[7px] left-0.5">chevron_right</span></span></h6>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".autoType",{
+            strings: ["Mradul","Mradul^1000","Tiwari"],
+            typeSpeed: 50,
+            backSpeed: 50,
+            loop: true,
+            showCursor: false,
+        });
+    </script>
+    <script>
+        var typed = new Typed(".auto-type",{
+            strings: ["Signing_off","Signing_off","SeeYouSoon"],
+            startDelay: 400,
+            typeSpeed: 50,
+            backSpeed: 50,
+            loop: true,
+            showCursor: false,
+            
+        });
+    </script>
+</body>
+
+</html>
